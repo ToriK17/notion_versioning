@@ -18,3 +18,4 @@ node "$BASE_DIR/export-pages.mjs" "$TARGET_DIR"
 cd "$BASE_DIR"
 git add .
 git commit -m "Backup on $TIMESTAMP" || echo "🪹 Nothing to commit."
+git push
