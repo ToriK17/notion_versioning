@@ -1,5 +1,6 @@
 # Notion Versioning
-[![Last Commit](https://img.shields.io/github/last-commit/torik17/notion-versioning)](https://github.com/torik17/notion-versioning)
+[![Last Commit](https://img.shields.io/github/last-commit/ToriK17/notion_versioning)](https://github.com/ToriK17/notion_versioning)
+
 
 Back up your Notion pages into Markdown and track them over time with Git.  
 This repo turns your digital notes into a version-controlled file system.
@@ -42,8 +43,7 @@ I made this to:
 5. Set it up as a cron job (Optional)
   `cronntab -e`
   Then add something like:
-  ```bash
-  0 7 * * * /path/to/daily-notion-backup.sh >> /tmp/notion_backup.log 2>&1
+  `0 7 * * * /path/to/daily-notion-backup.sh >> /tmp/notion_backup.log 2>&1`
 
 ## Disclaimer
 This is a super simple personal project.
