@@ -13,7 +13,7 @@ mkdir -p "$TARGET_DIR"
 
 # Node script to export pages
 node "$BASE_DIR/export-pages.mjs" "$TARGET_DIR"
-sleep 5500
+sleep 9999
 
 # Git commit and push
 cd "$BASE_DIR"
