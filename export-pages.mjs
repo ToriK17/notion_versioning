@@ -37,6 +37,8 @@ const getTitleSlug = (url) => {
 const slugify = (str) =>
   str.replace(/[^a-zA-Z0-9-_ ]/g, '').replace(/\s+/g, '_');
 
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 (async () => {
   for (const url of pageUrls) {
     const title = getTitleSlug(url);
@@ -54,5 +56,8 @@ const slugify = (str) =>
       console.error(`❌ Failed to export ${url}:`);
       console.error(err?.message || err);
     }
+
+    // Throttle: wait 1.5 seconds before the next request
+    await sleep(1500);
   }
 })();
