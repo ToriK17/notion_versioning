@@ -60,4 +60,5 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
     // Throttle: wait 1.5 seconds before the next request
     await sleep(1500);
   }
+  process.exit(0);
 })();
