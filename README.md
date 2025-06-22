@@ -38,7 +38,7 @@ I made this to:
    You'll need to grab your `token_v2` and `file_token` cookies from Notion.
    More details at: [notion-exporter](https://github.com/yannbolliger/notion-exporter)
 
-4. Run `npm install`
+4. Run `npm install` to install dependencies
 
 5. Run the backup manually: `./daily-notion-backup.sh`
 
