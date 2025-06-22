@@ -36,11 +36,13 @@ I made this to:
 
 3. Set up your .env file
    You'll need to grab your `token_v2` and `file_token` cookies from Notion.
-   More details at: [notion-exporter](https://github.com/yannbolliger/notion-exporter) 
+   More details at: [notion-exporter](https://github.com/yannbolliger/notion-exporter)
 
-4. Run the backup manually: `./daily-notion-backup.sh`
+4. Run `npm install`
 
-5. Set it up as a cron job (Optional)
+5. Run the backup manually: `./daily-notion-backup.sh`
+
+6. Set it up as a cron job (Optional)
   `cronntab -e`
   Then add something like:
   `0 7 * * * /path/to/daily-notion-backup.sh >> /tmp/notion_backup.log 2>&1`
