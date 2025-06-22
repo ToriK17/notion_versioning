@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-BASE_DIR="/Users/tori/Development_new/notion_versioning"
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 EXPORT_DIR="$BASE_DIR/notion_exports"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 TARGET_DIR="$EXPORT_DIR/export_$TIMESTAMP"

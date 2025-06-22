@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.7",
-    "notion-exporter": "file:../notion-exporter"
+    "notion-exporter": "^0.7.0"
   }
 }
