@@ -55,6 +55,7 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
     } catch (err) {
       console.error(`❌ Failed to export ${url}:`);
       console.error(err?.message || err);
+      console.error(err);
     }
 
     // Throttle: wait 1.5 seconds before the next request
