@@ -58,8 +58,8 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
       console.error(err);
     }
 
-    // Throttle: wait 1.5 seconds before the next request
-    await sleep(2500);
+    // Throttle: wait between requests to avoid Notion rate limits
+    await sleep(5000);
   }
   process.exit(0);
 })();
